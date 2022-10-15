@@ -1,0 +1,168 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	color: #333333;
+}
+
+.logo a {
+	font-size: 1rem;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #333333;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-list {
+	list-style-type: none;
+	display: flex;
+}
+
+.nav-list .list-item {
+	display: block;
+	padding: 1.5rem 1rem;
+}
+
+.navbar li a {
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: #333333;
+}
+
+.menu {
+	display: none;
+}
+
+.menu-line {
+	width: 20px;
+	height: 2px;
+	background-color: #333333;
+	margin-bottom: 5px;
+}
+
+.carousel {
+	background: url("./main-banner.png");
+	display: block;
+	background-size: cover;
+	height: 28rem;
+	background-position: center;
+}
+
+.carousel img {
+	width: 100%;
+}
+
+.introduction {
+	padding: 6rem 0% 0% 25%;
+}
+
+.intro-text {
+	width: 20rem;
+}
+
+.intro-text h1 {
+	font-size: 2.1rem;
+	margin-bottom: 1rem;
+}
+
+.intro-text p {
+	font-size: 0.8rem;
+	color: #333333;
+	margin-bottom: 1.2rem;
+}
+
+.learn-more {
+	padding: 0.5rem;
+	color: #fff;
+	border: 1px solid #79bbff;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	background: linear-gradient(#79bbff, #0A60B8);
+	margin-right: 0.5rem;
+	cursor: pointer;
+}
+
+.get-in-touch {
+	padding: 0.5rem;
+	color: #999999;
+	border: 1px solid #bcbcbc;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	background: linear-gradient(#f5f5f5, #f9f9f9);
+	cursor: pointer;
+}
+
+.main-content {
+	text-align: center;
+	padding: 2.5rem;
+}
+
+.main-content a {
+	font-size: 0.7rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #5997EE;
+}
+
+@media all and (max-width:480px) {
+	.logo {
+		width: 80%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		position: relative;
+		padding: 12px 10px;
+	}
+
+	.menu {
+		display: block;
+		position: absolute;
+		left: 1rem;
+		top: 0.8rem;
+	}
+
+	.nav-list {
+		list-style-type: none;
+		width: 100%;
+		text-align: center;
+		padding-top: 1rem;
+		display: none;
+	}
+
+	.nav-list .list-item {
+		display: block;
+		padding: 0.8rem;
+		border-top: 1px solid #f9f9f9;
+	}
+
+	.active {
+		display: block;
+	}
+
+	.introduction {
+		padding: 6rem 0rem 0rem 1rem;
+	}
+
+	.intro-text {
+		width: 16rem;
+	}
+
+	.intro-text h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+}
